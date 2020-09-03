@@ -1,0 +1,43 @@
+.menu-mobile {
+   display: none;
+   @media screen and (max-width: 767px) {
+     &:hover{
+       border-color: #8A8A8A;
+     }
+     @include menu-basic;
+     &::after,
+     &::before {
+       @include menu-hr
+     }
+     &::before {
+       margin-top: 5px;
+     }
+     &::after {
+       margin-bottom: 5px;
+     }
+     .menu-mobile__hr {
+       &::after {
+         @include menu-hr
+       }
+     }
+   }
+ }
+.menu-mobile--active {
+  display: none;
+  @media screen and (max-width: 768px) {
+    @include menu-basic;
+    &::before {
+      @include menu-hr
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    .menu-mobile__hr {
+      &::after {
+        @include menu-hr;
+        transform: rotate(135deg);
+        margin-top: -5px;
+      }
+    }
+  }
+}

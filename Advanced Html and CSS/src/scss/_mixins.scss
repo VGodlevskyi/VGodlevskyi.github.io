@@ -1,0 +1,30 @@
+@mixin menu-mobile__hr {
+  width: 17px;
+  border-top: 2px solid #ffffff;
+}
+@mixin flex-column-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin menu-hr{
+  display: block;
+  content: "";
+  @include menu-mobile__hr;
+  height: 2px;
+}
+@mixin menu-basic{
+  text-align: center;
+  display: inline-block;
+  @include flex-column-center;
+  width: 44px;
+  height: 37px;
+  background-color: black;
+  border-color: transparent;
+}
+@mixin min768-fz16{
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}

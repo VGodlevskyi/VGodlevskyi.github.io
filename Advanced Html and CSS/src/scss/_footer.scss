@@ -1,0 +1,80 @@
+.footer-zone {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: $footer-bg;
+  color: $text-color-footer;
+  @include flex-column-center;
+
+  &__title {
+    text-transform: uppercase;
+    color: $text-color-footer-title;
+    @include min768-fz16;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 10px 35px 20px 35px;
+    text-align: center;
+    @include min768-fz16;
+    @media screen and (min-width: 768px) {
+      width: 680px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__icon-link {
+    margin-right: 6px;
+    border: 1px solid #F8902E;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    @include flex-column-center;
+    &:hover {
+      background-color: #fff;
+    }
+
+    &--facebook {
+      border-color: #39599F;
+    }
+
+    &--twitter {
+      border-color: #45B0E3;
+    }
+
+    &--dribbble {
+      border-color: #D97AB0;
+    }
+
+    &--pinterest {
+      border-color: #CC212C;
+    }
+  }
+
+  &__icon-img {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__contacts {
+    @include flex-column-center;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+  &__adress, &__tel, &__email {
+    font-weight: normal;
+    margin: 0 10px 10px 10px;
+    @include min768-fz16;
+  }
+
+  &__email:hover {
+    color: #FFFFFF;
+  }
+}
