@@ -1,0 +1,23 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: $text-color-titles;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px 0 10px;
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+
+  }
+}
