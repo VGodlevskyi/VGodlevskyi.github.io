@@ -1,0 +1,39 @@
+@mixin flex-space-between {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+@mixin btn {
+   border: 2px solid $color-yellow;
+   font-size: 20px;
+   font-weight: bold;
+   color: $color-yellow;
+   background: inherit;
+   border-radius: 10px;
+   transition: .3s;
+   cursor: pointer;
+}
+
+@mixin btn-hover {
+   border: 2px solid $color-black;
+   color: $color-green;
+   background: $color-yellow;
+}
+
+@mixin form-select {
+   font-size: 15px;
+   font-weight: bolder;
+   border: 2px solid $color-green;
+   border-radius: 5px;
+   color: $color-green;
+   background: #c8c8c8;
+}
+
+@mixin form-input {
+   font-size: 17px;
+   width: 90%;
+   padding: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}

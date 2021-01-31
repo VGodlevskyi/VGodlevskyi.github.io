@@ -1,0 +1,35 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+
+@import "header";
+@import "search";
+@import "modal";
+@import "card";
+@import "form";
+@import "visit";
+
+* {
+   outline: none;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+   content: '';
+   position: fixed;
+   background: url("../img/clinic-bg.jpg") center / cover no-repeat;
+   filter: blur(7px);
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+.wrapper {
+   max-width: 1200px;
+   margin: 0 auto;
+}
