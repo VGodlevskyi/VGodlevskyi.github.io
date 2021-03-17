@@ -1,0 +1,126 @@
+.user-post-container {
+  margin-top: 30px;
+  border-top: rgba(160, 160, 160, 1) 2px solid;
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+
+    & .active {
+      border-top: rgba(0, 0, 0, 1) 2px solid;
+      color: rgba(0, 0, 0, 1);
+
+      & svg {
+        fill: rgba(0, 0, 0, 1);
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      align-items: center;
+      font-size: 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+
+
+      &__wrapper {
+        padding: 10px 0;
+        margin-top: -2px; //it`s needed for decorate active tab top border
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-top: rgba(0, 0, 0, 0) 2px solid;
+        color: rgba(142, 142, 142, 1);
+        font-weight: bold;
+      }
+
+      & svg {
+        justify-self: right;
+        width: 18px;
+        fill: rgba(142, 142, 142, 1);
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px 2px;
+
+    &__item {
+      position: relative;
+      cursor: pointer;
+
+      &__overlay {
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+
+        & svg {
+          fill: rgba(255, 255, 255, 1);
+          margin-right: 10px;
+        }
+
+        & span {
+          display: flex;
+          align-items: center;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+
+      &:hover &__overlay {
+        display: flex;
+        animation: overlay-fade-in 500ms ease-in;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__text {
+    margin: 10px 0;
+    color: rgba(142, 142, 142, 1);
+    text-align: center;
+
+    & p {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    & label {
+      display: inline-block;
+      padding: 5px 10px;
+      border: rgba(142, 142, 142, 1) 1px solid;
+      border-radius: 3px;
+      cursor: pointer;
+
+      & input {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
+
+@keyframes overlay-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

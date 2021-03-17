@@ -1,0 +1,23 @@
+.add-post-comment {
+  padding: 20px;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+
+  & form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  & button {
+    color: dodgerblue;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}

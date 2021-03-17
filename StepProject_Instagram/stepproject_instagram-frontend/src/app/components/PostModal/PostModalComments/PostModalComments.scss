@@ -1,0 +1,18 @@
+.post-modal-comments {
+  padding: 10px 20px;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+
+  &__item {
+    margin-bottom: 10px;
+    font-size: 20px;
+    user-select: none;
+
+    &__author {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+}

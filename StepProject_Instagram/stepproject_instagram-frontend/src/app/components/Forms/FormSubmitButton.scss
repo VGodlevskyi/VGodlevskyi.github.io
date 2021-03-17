@@ -1,0 +1,16 @@
+.form_submit {
+  padding: 7px;
+  width: 100%;
+  background: rgba(30, 144, 255, 1);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

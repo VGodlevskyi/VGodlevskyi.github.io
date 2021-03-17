@@ -1,0 +1,26 @@
+.login-page {
+  display: grid;
+  grid-template-rows: 19fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #fafafa;
+  &__img {
+    & img {
+      margin-right: 100px
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .login-page__img {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.signup-page {
+  display: grid;
+  grid-template-rows: 19fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

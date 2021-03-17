@@ -1,0 +1,10 @@
+.post-container {
+  margin-right: 40px;
+  width: 100%;
+
+  &__message {
+    color: rgba(142, 142, 142, 1);
+    font-size: 20px;
+    text-align: center;
+  }
+}

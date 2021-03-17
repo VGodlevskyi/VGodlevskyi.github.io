@@ -1,0 +1,99 @@
+.sidebar {
+  height: 100%;
+  max-width: 290px;
+  position: sticky;
+  top: 120px;
+
+  &__profile {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-column-gap: 15px;
+    align-items: center;
+
+    &__photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 72px;
+      height: 72px;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__info {
+
+      &--username {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      &--name {
+        font-size: 18px;
+        color: rgba(142, 142, 142, 1);
+      }
+    }
+  }
+
+  &__recommends {
+    margin: 30px 0;
+
+    &__header {
+      color: rgba(142, 142, 142, 1);
+      font-weight: bold;
+    }
+
+
+    &__item {
+      margin: 15px 0;
+      display: grid;
+      grid-template-columns: 44px auto 100px;
+      grid-column-gap: 5px;
+      align-items: center;
+
+      &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid rgba(219, 219, 219, 1);
+
+        & img {
+          width: 100%;
+          height: 46px;
+        }
+      }
+
+      &__info {
+        max-width: 190px;
+
+        &--username {
+          display: inline-block;
+          margin-bottom: 5px;
+          color: rgba(0, 0, 0, 1);
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        &--name {
+          font-size: 12px;
+          color: rgba(142, 142, 142, 1);
+        }
+      }
+
+      &__subscribe {
+        color: dodgerblue;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: #555555 1px solid;
+  padding: 10px;
+  z-index: 999;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    max-width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__search {
+    border: solid 1px rgba(219, 219, 219, 1);
+    outline: none;
+    padding: 5px 10px;
+  }
+
+  &__menu {
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__home-active {
+      & svg path {
+        d: path("M 45.5 48 H 30.1 c -0.8 0 -1.5 -0.7 -1.5 -1.5 V 34.2 c 0 -2.6 -2.1 -4.6 -4.6 -4.6 s -4.6 2.1 -4.6 4.6 v 12.3 c 0 0.8 -0.7 1.5 -1.5 1.5 H 2.5 c -0.8 0 -1.5 -0.7 -1.5 -1.5 V 23 c 0 -0.4 0.2 -0.8 0.4 -1.1 L 22.9 0.4 c 0.6 -0.6 1.6 -0.6 2.1 0 l 21.5 21.5 c 0.3 0.3 0.4 0.7 0.4 1.1 v 23.5 c 0.1 0.8 -0.6 1.5 -1.4 1.5 Z");
+      }
+    }
+
+    &__direct-active {
+      & svg path {
+        d: path("M 47.8 3.8 c -0.3 -0.5 -0.8 -0.8 -1.3 -0.8 h -45 C 0.9 3.1 0.3 3.5 0.1 4 S 0 5.2 0.4 5.7 l 13.2 13 c 0.5 0.4 1.1 0.6 1.7 0.3 l 16.6 -8 c 0.7 -0.3 1.6 -0.1 2 0.5 c 0.4 0.7 0.2 1.6 -0.5 2 l -15.6 9.9 c -0.5 0.3 -0.8 1 -0.7 1.6 l 4.6 19 c 0.1 0.6 0.6 1 1.2 1.1 h 0.2 c 0.5 0 1 -0.3 1.3 -0.7 l 23.2 -39 c 0.5 -0.5 0.5 -1.1 0.2 -1.6 Z");
+      }
+    }
+
+    &__find-people-active {
+      & svg path {
+        d: path("M 24 0 C 10.8 0 0 10.8 0 24 s 10.8 24 24 24 s 24 -10.8 24 -24 S 37.2 0 24 0 Z m 12.2 13.8 l -7 14.8 c -0.1 0.3 -0.4 0.6 -0.7 0.7 l -14.8 7 c -0.2 0.1 -0.4 0.1 -0.6 0.1 c -0.4 0 -0.8 -0.2 -1.1 -0.4 c -0.4 -0.4 -0.6 -1.1 -0.3 -1.7 l 7 -14.8 c 0.1 -0.3 0.4 -0.6 0.7 -0.7 l 14.8 -7 c 0.6 -0.3 1.3 -0.2 1.7 0.3 c 0.5 0.4 0.6 1.1 0.3 1.7 Z m -15 7.4 l -5 10.5 l 10.5 -5 l -5.5 -5.5 Z");
+      }
+    }
+
+    &__likes-active {
+      & svg path {
+        d: path("M 34.6 3.1 c -4.5 0 -7.9 1.8 -10.6 5.6 c -2.7 -3.7 -6.1 -5.5 -10.6 -5.5 C 6 3.1 0 9.6 0 17.6 c 0 7.3 5.4 12 10.6 16.5 c 0.6 0.5 1.3 1.1 1.9 1.7 l 2.3 2 c 4.4 3.9 6.6 5.9 7.6 6.5 c 0.5 0.3 1.1 0.5 1.6 0.5 s 1.1 -0.2 1.6 -0.5 c 1 -0.6 2.8 -2.2 7.8 -6.8 l 2 -1.8 c 0.7 -0.6 1.3 -1.2 2 -1.7 C 42.7 29.6 48 25 48 17.6 c 0 -8 -6 -14.5 -13.4 -14.5 Z");
+      }
+    }
+
+    &__profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      overflow: hidden;
+      border: white;
+      border-radius: 50%;
+      margin-right: 20px;
+
+      & img {
+        width: 100%;
+      }
+
+      &__link {
+        border: rgba(0, 0, 0, 0) 1px solid;
+        border-radius: 50%;
+        padding: 2px;
+
+        &--active {
+          border-color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.post-item {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(219, 219, 219, 1);
+  margin: 0 0 60px 0;
+
+  &__header {
+    height: 60px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
+
+    &__link {
+      color: rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+    }
+
+    &__image {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      border: 1px solid rgba(219, 219, 219, 1);
+      text-align: center;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__username {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+
+    &__options {
+      justify-self: right;
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    position: relative;
+
+    &:hover &__overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__overlay {
+      position: absolute;
+      display: none;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.2);
+      user-select: none;
+      cursor: pointer;
+      animation: overlay-fade-in 500ms ease-in;
+
+
+      & svg {
+        fill: #f4f4f4;
+        width: 100px;
+        height: 100px;
+        opacity: 0.6;
+      }
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__stats {
+    padding: 0 20px;
+
+    &__actions {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__inner {
+        min-width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__icon {
+        cursor: pointer;
+      }
+    }
+
+    &__likes {
+      margin: 20px 0;
+      font-weight: bold;
+    }
+  }
+}
+
+.last-comment {
+  margin: 0 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & p {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &-author {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.all-comments-button__wrapper {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

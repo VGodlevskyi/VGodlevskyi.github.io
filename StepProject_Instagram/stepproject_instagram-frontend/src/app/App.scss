@@ -1,0 +1,16 @@
+@import "styles/reset";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+
+#app {
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
